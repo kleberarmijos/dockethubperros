@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $conn->begin_transaction();
 
                     // Preparar consulta SQL para insertar datos en la base de datos
-                    $stmt = $conn->prepare("INSERT INTO Mascotas (ID_Usuario, Especie, Raza, Nombre, Sexo, Edad, Color, Peso, Foto, Numero_Identificacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                    $stmt = $conn->prepare("INSERT INTO mascotas (ID_Usuario, Especie, Raza, Nombre, Sexo, Edad, Color, Peso, Foto, Numero_Identificacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                     $stmt->bind_param("issssisdss", $id_usuario, $especie, $raza, $nombre, $sexo, $edad, $color, $peso, $imagen, $numero_identificacion);
                     $stmt->execute();
 

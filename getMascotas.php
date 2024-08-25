@@ -9,7 +9,7 @@ require_once 'conexion.php';
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     try {
         // Obtener todas las mascotas de la base de datos
-        $result = $conn->query("SELECT * FROM Mascotas");
+        $result = $conn->query("SELECT * FROM mascotas");
         $mascotas = array();
 
         while ($row = $result->fetch_assoc()) {

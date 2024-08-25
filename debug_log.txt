@@ -1,0 +1,1 @@
+{"ID":"92","ID_Mascota":"18","Fecha":"2024-08-24","Esterilizado":"1","Fecha_Esterilizacion":"2024-08-07","Ubicacion_Esterilizacion":"Quito","vacunas":[15]}

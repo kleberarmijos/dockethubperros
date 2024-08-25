@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $cedula = $_GET['cedula'];
 
         // Prepara la consulta para buscar el usuario por cédula
-        $sql = "SELECT ID, CONCAT(Nombre, ' ', Apellido) AS NombreCompleto FROM Usuarios WHERE cedula = ?";
+        $sql = "SELECT ID, CONCAT(Nombre, ' ', Apellido) AS NombreCompleto FROM usuarios WHERE cedula = ?";
         $stmt = $conn->prepare($sql);
 
         // Agrega el parámetro y ejecuta la consulta
